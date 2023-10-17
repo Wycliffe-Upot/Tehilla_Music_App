@@ -1,3 +1,5 @@
+@import "./fontawesome/scss/fontawesome.scss";
+
 html,body {
     height:100% /*setting this explicitly is important*/
 }
@@ -24,5 +26,44 @@ footer {
 }
 
 aside {
+    display: flex;
     flex: 0 0 40px; /*do not grow or shrink. Stay fixed at 40px;*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    font-size: 0.9em;
+}
+.content {
+    display: flex;
+    flex: 1 1 auto; /*this makes sure the section grows to fill the entire available space and shrinks too*/
+    flex-direction: column;
+}
+
+.music-head {
+    flex: 0 0 280px; /*Same memo, don't grow or shrink-stay at 280px*/
+    display: flex;padding: 40px;
+    background-color: #4e4e4e;
+}
+
+.music-list {
+    flex: 1 0 auto;
+    list-style: none;
+    padding: 5px 10px 0px;
+}
+
+li {
+    display: flex;
+    padding: 0 20px;
+    min-height: 50px;
+}
+
+li p {
+    flex: 0 0 25%;
+    .first-section: 0 0 60%;
+    .second-section: 0 0 40%;
+}
+
+li span.catty-cloud {
+    
 }
